@@ -1,1 +1,3 @@
 # Shell
+This repo has a simple Unix shell program made in C++. The shell lets users do basic commands, go through directories, set env variables, and handle processes. It has built-in commands like exit, echo, pwd, cd, setpath. The shell prompts users with "Wash> " and takes commands with optional background using "&". It uses POSIX APIs for process and directory stuff. You can compile the program with any C++ compiler  This README gives you a quick look at what the shell does, how to build and run it, and info on each built-in command's job. For more details, check the code files and comments inside.
+

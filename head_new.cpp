@@ -13,7 +13,12 @@ using std::cout;
 #define MAX_LENG 256
 
 void usage(){
-    std::cout << "Usgae: ./head_new [-h] [-n N] [file.txt]" << endl;
+    cout << "Usgae: ./head_new [-h] [-n N] [file.txt]" << endl;
+    cout << "Usage: head_new [-h] [-n N] [file.txt]"<< endl;
+    std::cout << "Options: "<< endl;
+    std::cout << "  -h " << endl;
+    std::cout << "  -n N " << endl;
+
 
 }
 

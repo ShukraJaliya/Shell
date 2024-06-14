@@ -85,7 +85,7 @@ int main() {
     // Implementation of 'cd' command
             if (args[0] == NULL) {
 
-                args[0] = getenv("HOME"); // Change to home directory if no argument provided
+                args[0] = getenv("HOME"); // Change home directory ifthere is  argument provided
             }
             if (chdir(args[1]) != 0) {
                 perror("cd");
@@ -95,7 +95,8 @@ int main() {
         else if (strcmp(args[1], "setpath") == 0) {
             // Implementation of 'setpath' command
             if (args[1] == NULL) {
-                cerr << "setpath: missing argument\n"; // Print error for missing argument
+                cerr << "setpath: missing argument\n"; 
+                // Print error for missing argument
 
             }
              else {
@@ -109,7 +110,8 @@ int main() {
                         path += ":"; // Add ':' as separator between paths
                     }
                 }
-                setenv("PATH", path.c_str(), 1); // Set PATH environment variable
+                setenv("PATH", path.c_str(), 1); 
+                // Set PATH environment variable
             }
 
         }
