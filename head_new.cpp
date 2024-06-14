@@ -1,6 +1,6 @@
-#include <iostream>
-#include <fstream>
-#include <string>
+#include <iostream> // input and output handling
+#include <fstream> //file handling
+#include <string>  //string handling 
 #include <cstdlib>
 
 using std::strcmp;
@@ -8,6 +8,7 @@ using std::istream;
 using std::ifstream;
 using std::cerr;
 using std::endl;
+using std::cout;
 #define LINES 7
 #define MAX_LENG 256
 
@@ -57,5 +58,13 @@ int main(int argc, char *argv[]){
         }
         input = &file;
     }
+    std::string line;
+    for(int i=0; i< lines && std::getline(*input, line); i++){
+        cout << line << endl;
+    }
+    if (file.is_open()){
+        file.close();
+    }
+    return 0;
 
 }
